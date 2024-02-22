@@ -158,58 +158,8 @@ header {
 }
     }
 }
-.horizontal {
-    margin-top: 60px;
-    margin-top: 60px;
-    display: flex; /* Utilizamos flexbox para distribuir los elementos en una fila */
-    justify-content: space-between; /* Espacio entre los elementos */
-    padding: 50px; 
-}
 
-.deporteinicial {
-    margin: -20px 0;
-}
 
-.col-3 {
-    flex-basis: 30%;
-    max-width: 300px; /* Reducir el tamaño máximo de las imágenes */
-    margin-bottom: 20px;
-    margin-right: 20px; /* Agregar espacio entre las imágenes */
-    
-}
-
-.col-3 img {
-    width: 100%; /* Ajustar el tamaño de la imagen al contenedor */
-    height: auto; /* Mantener la proporción de aspecto */
-    display: block; /* Para evitar espacios debajo de las imágenes */
-    margin-top: 10px; /* Ajustar el margen superior de las imágenes */
-    
-}
-
-.logosinterior{
-    margin-top: 0px;
-    margin: 5px; /* Reducir el margen superior */
-    display: flex; /* Utilizamos flexbox para distribuir los elementos en una fila */
-    justify-content: center; /* Centrar los logos horizontalmente */
-    padding: 20px 0; /* Reducir el espacio interno */
-    
-}
-.col-4 {
-    flex-basis: 30%;
-    max-width: 300px; /* Reducir el tamaño máximo de las imágenes */
-    margin-bottom: 30px;
-    margin-right: 50px; /* Agregar espacio entre las imágenes */
-    
-    
-}
-.col-4 img {
-    width: 100%; /* Ajustar el tamaño de la imagen al contenedor */
-    height: auto; /* Mantener la proporción de aspecto */
-    display: block; /* Para evitar espacios debajo de las imágenes */
-    margin-top: 10px; /* Ajustar el margen superior de las imágenes */
-    max-width: 100%; /* Limitar el tamaño máximo de la imagen */
-    max-height: 200px; /* Establecer el tamaño máximo de la imagen */
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -289,6 +239,55 @@ body {
     background-color: #0056b3;
 }
 
+.contenedor {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Ajusta la distancia desde la parte superior */
+}
+
+#formulario-inicio-sesion {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
 
 .clearfix {
     clear: both;
@@ -297,10 +296,5 @@ body {
 @media only screen and (max-width: 768px) {
     .column {
         width: 100%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .logosinterior {
-        margin-top: 150px; /* Ajustar el margen superior para separar los logos del formulario */
     }
 }
