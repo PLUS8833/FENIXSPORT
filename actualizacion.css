@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body    {
+    font-family: 'Poppins', sans-serif;  
+}
+container{
+    max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content{
+    background-color: #062b6e;
+    min-height: 80px;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 78px;
+}
+.logotipo{
+        
+        width: 80px;
+        height: 70px;
+        color: white;
+        position: fixed;
+        margin:0;
+        margin-top: 0; /* Elimina el margen superior */
+        margin-bottom: 0; /* Elimina el margen inferior */
+        padding: 0; /* Elimina el relleno */
+        max-height: 3.5rem;
+       
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Ajusta el color de fondo según tu diseño */
+    z-index: 999; /* Ajusta el valor según sea necesario */
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+  font-size:  18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover{
+    color: #d367ce;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px) {
+    .content  {
+        min-height: 70px;
+    }
+    .menu{
+        top:0 ;
+        padding: 20px;
+    }
+    .menu label
+    {
+        display: initial;
+       
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgb(100, 208, 241);
+        display: none;
+    }
+    .menu .navbar ul  li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+   
+}
+
+.footer{
+    
+    bottom: 0; /* Colocar en la parte inferior */
+    width: 100%; /* Ancho del footer al 100% */
+    position: fixed;
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #062b6e;
+    height: 50px;
+    li {
+        display: flex;
+        align-items: center;        
+        justify-items: center;
+        color: #ffffff;  
+        margin-left: 15px;
+        
+        a{
+            color: #ffffff;
+        }
+    }
+}
+.mapa{
+    position: fixed;
+    bottom: 0;
+    right: 0; /* Posicionar en la esquina inferior derecha */
+    bottom: right; /* Colocar en la parte inferior */
+    padding: 15px; /* Agregado para espacio interior */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar verticalmente */
+    
+    li {
+        display: flex;
+        align-items: center;        
+        justify-items: center;
+        color: #ffffff;  
+        margin-left: 15px;
+        
+        
+        a{
+            color: #ffffff;
+}
+    }
+}
+.horizontal {
+    margin-top: 60px;
+    margin-top: 60px;
+    display: flex; /* Utilizamos flexbox para distribuir los elementos en una fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 50px; 
+}
+
+.deporteinicial {
+    margin: -20px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    max-width: 300px; /* Reducir el tamaño máximo de las imágenes */
+    margin-bottom: 20px;
+    margin-right: 20px; /* Agregar espacio entre las imágenes */
+    
+}
+
+.col-3 img {
+    width: 100%; /* Ajustar el tamaño de la imagen al contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    display: block; /* Para evitar espacios debajo de las imágenes */
+    margin-top: 10px; /* Ajustar el margen superior de las imágenes */
+    
+}
+
+.logosinterior{
+    margin-top: 0px;
+    margin: 5px; /* Reducir el margen superior */
+    display: flex; /* Utilizamos flexbox para distribuir los elementos en una fila */
+    justify-content: center; /* Centrar los logos horizontalmente */
+    padding: 20px 0; /* Reducir el espacio interno */
+    
+}
+.col-4 {
+    flex-basis: 30%;
+    max-width: 300px; /* Reducir el tamaño máximo de las imágenes */
+    margin-bottom: 30px;
+    margin-right: 50px; /* Agregar espacio entre las imágenes */
+    
+    
+}
+.col-4 img {
+    width: 100%; /* Ajustar el tamaño de la imagen al contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    display: block; /* Para evitar espacios debajo de las imágenes */
+    margin-top: 10px; /* Ajustar el margen superior de las imágenes */
+    max-width: 100%; /* Limitar el tamaño máximo de la imagen */
+    max-height: 200px; /* Establecer el tamaño máximo de la imagen */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px; /* Ajusta el margen superior para que no quede detrás de la barra de navegación */
+
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-group span {
+    color: red;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+.button-group {
+    
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Coloca el botón en el centro horizontalmente */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logosinterior {
+        margin-top: 150px; /* Ajustar el margen superior para separar los logos del formulario */
+    }
+}

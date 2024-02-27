@@ -1,0 +1,344 @@
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body    {
+    font-family: 'Poppins', sans-serif;  
+}
+container{
+    max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content{
+    background-color: #062b6e;
+    min-height: 80px;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 78px;
+}
+.logotipo{
+        
+        width: 80px;
+        height: 70px;
+        color: white;
+        position: fixed;
+        margin:0;
+        margin-top: 0; /* Elimina el margen superior */
+        margin-bottom: 0; /* Elimina el margen inferior */
+        padding: 0; /* Elimina el relleno */
+        max-height: 3.5rem;
+       
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Ajusta el color de fondo según tu diseño */
+    z-index: 999; /* Ajusta el valor según sea necesario */
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+  font-size:  18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover{
+    color: #d367ce;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px) {
+    .content  {
+        min-height: 70px;
+    }
+    .menu{
+        top:0 ;
+        padding: 20px;
+    }
+    .menu label
+    {
+        display: initial;
+       
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgb(100, 208, 241);
+        display: none;
+    }
+    .menu .navbar ul  li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+   
+}
+
+.footer{
+    
+    bottom: 0; /* Colocar en la parte inferior */
+    width: 100%; /* Ancho del footer al 100% */
+    position: fixed;
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #062b6e;
+    height: 50px;
+    li {
+        display: flex;
+        align-items: center;        
+        justify-items: center;
+        color: #ffffff;  
+        margin-left: 15px;
+        
+        a{
+            color: #ffffff;
+        }
+    }
+}
+.mapa{
+    position: fixed;
+    bottom: 0;
+    right: 0; /* Posicionar en la esquina inferior derecha */
+    bottom: right; /* Colocar en la parte inferior */
+    padding: 15px; /* Agregado para espacio interior */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar verticalmente */
+    
+    li {
+        display: flex;
+        align-items: center;        
+        justify-items: center;
+        color: #ffffff;  
+        margin-left: 15px;
+        
+        
+        a{
+            color: #ffffff;
+}
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group span {
+    color: red;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+.button-group {
+    
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Coloca el botón en el centro horizontalmente */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.contenedor {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Ajusta la distancia desde la parte superior */
+}
+
+#formulario-inicio-sesion {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #21c7dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
+input[type="email"] 
+{ width: 75%;}
+input[type="password"] {
+    width: 50%; /* Ancho del campo de entrada ajustado */
+}
+button[type="submit"] {
+    width: 50%;}
+     /* Ancho del botón ajustado */
+
+     input[type="email"],
+
+button[type="submit"] {
+    width: 50%; /* Ancho del campo de entrada y del botón ajustado */
+    margin-left: auto; /* Centra los elementos */
+    margin-right: auto; /* Centra los elementos */
+    
+
+}
+
+
+.lista-izquierda {
+    float: left;
+    width:30%;
+    padding: 10px;
+    text-align: left;
+    list-style-type: symbols(°); /* Establece el tipo de viñeta */
+    list-style-type: square; /* Establece el tipo de viñeta para las sublistas anidadas */
+}
+
+.imagenmapadenavegacion{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    text-align: center;
+    list-style-type: disc; /* Establece el tipo de viñeta */
+    list-style-type: square; /* Establece el tipo de viñeta para las sublistas anidadas */
+}
+
